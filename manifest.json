@@ -1,0 +1,15 @@
+{
+  "name": "Correção da Tela do Vídeo",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Correção da Tela do Vídeo no site alunos.institutomonitor.com.br.",
+  "icons" : {
+    "16" : "icon128.png",
+    "48" : "icon128.png",
+    "128" : "icon128.png"
+  },
+  "content_scripts": [{
+    "matches": [ "*://alunos.institutomonitor.com.br/*" ],
+    "js": [ "bug-fix-video.js" ]
+  }]
+}
